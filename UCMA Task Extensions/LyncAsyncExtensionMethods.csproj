@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{746987AB-6694-49D5-810B-E672798C23AA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LyncAsyncExtensionMethods</RootNamespace>
+    <AssemblyName>LyncAsyncExtensionMethods</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Rtc.Collaboration, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files\Microsoft UCMA 4.0\SDK\Core\Bin\Microsoft.Rtc.Collaboration.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEndpointMethods.cs" />
+    <Compile Include="ApplicationPinServicesMethods.cs" />
+    <Compile Include="AudioVideoCallMethods.cs" />
+    <Compile Include="AudioVideoFlowMethods.cs" />
+    <Compile Include="AudioVideoMcuRoutingMethods.cs" />
+    <Compile Include="AudioVideoMcuSessionMethods.cs" />
+    <Compile Include="CallMethods.cs" />
+    <Compile Include="CollaborationPlatformMethods.cs" />
+    <Compile Include="ConferenceInvitationMethods.cs" />
+    <Compile Include="ConferenceServicesMethods.cs" />
+    <Compile Include="ConferenceSessionMethods.cs" />
+    <Compile Include="ContactGroupServicesMethods.cs" />
+    <Compile Include="ConversationContextChannelMethods.cs" />
+    <Compile Include="ConversationMethods.cs" />
+    <Compile Include="InstantMessagingFlowMethods.cs" />
+    <Compile Include="InstantMessagingMcuSessionMethods.cs" />
+    <Compile Include="LobbyManagerMethods.cs" />
+    <Compile Include="LocalEndpointMethods.cs" />
+    <Compile Include="LocalEndpointPresenceServicesMethods.cs" />
+    <Compile Include="LocalOwnerPresenceMethods.cs" />
+    <Compile Include="McuSessionMethods.cs" />
+    <Compile Include="MediaSourceMethods.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PublishSubscribeSessionMethods.cs" />
+    <Compile Include="RemotePresenceMethods.cs" />
+    <Compile Include="RemotePresenceViewMethods.cs" />
+    <Compile Include="SpeechSynthesisConnectorMethods.cs" />
+    <Compile Include="UserPinServicesMethods.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
